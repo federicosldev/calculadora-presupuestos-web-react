@@ -63,7 +63,7 @@ function App() {
             Calculadora para Presupuestos Web
           </h1>
           <p className="text-lg text-zinc-400">
-            Esta es una herramienta para ayudarte a estimar el numero de horas que serían necesarias para desarrollar el proyecto.
+            Esta es una herramienta para ayudarte a estimar el número de horas que serían necesarias para desarrollar el proyecto.
           </p>
         </header>
 
