@@ -11,7 +11,7 @@ function WebsiteTypeSelector({ selectedType, onTypeSelect }) {
             key={key}
             onClick={() => onTypeSelect(key)}
             className={`p-6 rounded-xl border-2 transition-all transform hover:scale-105 ${selectedType === key
-              ? 'border-white bg-neutral-800 shadow-lg'
+              ? 'border-white bg-slate-800 bg-opacity-60 shadow-lg'
               : 'border-zinc-500 hover:border-zinc-300 hover:shadow-md'
               }`}
           >

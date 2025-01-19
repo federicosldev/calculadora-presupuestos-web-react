@@ -22,7 +22,7 @@ function OptionsSelector({ options, selections, onOptionChange, onCustomFieldAdd
   };
 
   return (
-    <div className="mb-8">
+    <div className="relative z-10 mb-8">
       <h2 className="mb-6 text-2xl font-bold text-center text-zinc-50">Personaliza tu Proyecto</h2>
 
       {/* Campos predefinidos */}
@@ -30,7 +30,7 @@ function OptionsSelector({ options, selections, onOptionChange, onCustomFieldAdd
         {options.map((option) => (
           <div
             key={option.id}
-            className="flex items-center gap-4 p-4 mb-4 transition-shadow border rounded-lg shadow-sm bg-neutral-800 hover:shadow-md"
+            className="flex items-center gap-4 p-4 mb-4 transition-shadow border rounded-lg shadow-sm bg-slate-800 bg-opacity-60 hover:shadow-md"
           >
             <span className="text-2xl">{option.icon}</span>
             <div className="flex-1">
@@ -67,7 +67,7 @@ function OptionsSelector({ options, selections, onOptionChange, onCustomFieldAdd
       {customFields.map((field) => (
         <div
           key={field.id}
-          className="flex items-center gap-4 p-4 mb-4 transition-shadow border rounded-lg shadow-sm bg-neutral-800 hover:shadow-md"
+          className="flex items-center gap-4 p-4 mb-4 transition-shadow border rounded-lg shadow-sm bg-slate-800 bg-opacity-60 hover:shadow-md"
         >
           <span className="text-2xl">{field.icon}</span>
           <div className="flex-1">
@@ -86,7 +86,7 @@ function OptionsSelector({ options, selections, onOptionChange, onCustomFieldAdd
       ))}
 
       {/* Formulario para añadir campos personalizados */}
-      <form onSubmit={handleAddCustomField} className="p-6 border rounded-lg bg-neutral-800">
+      <form onSubmit={handleAddCustomField} className="p-6 border rounded-lg bg-slate-800 bg-opacity-60">
         <h3 className="mb-4 text-lg font-semibold text-zinc-100">Añadir otro concepto</h3>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           <div>
